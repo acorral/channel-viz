@@ -67,18 +67,18 @@
 <body>
 
 
-<style>
+<script>
+
 // Set your API key first  
 xively.setKey( "ZSzD6wonLwpvob2IVPyC083VHk8ID1iMc87Bbe59QKIufXCA" );  
 // Get feed content  
-xively.feed.get( "217489518, function( data ) {  
-  console.log( data.title ); // Logs the feed title  
-});  
+xively.feed.get( "217489518", function( data ) { console.log( data.title ); // Logs the feed title });  
 // Get realtime updates on a datastream  
-xively.datastream.subscribe( "217489518", "Baterias", function( event, data ) {  
-  console.log( data.current_value ); // Logs value changes in realtime  
-});
-</style>
+xively.datastream.subscribe( "217489518", "Baterias", function( event, data ) {console.log( data.current_value ); 
+// Logs value changes in realtime});
+
+	
+</script>
 
 
 	<!-- Header -->
