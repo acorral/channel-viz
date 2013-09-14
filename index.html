@@ -75,12 +75,12 @@
 $(document).ready(function($) {  
   
   // Set the Xively API key (https://xively.com/users/YOUR_USERNAME/keys)  
-  xively.setKey( "ZSzD6wonLwpvob2IVPyC083VHk8ID1iMc87Bbe59QKIufXCAE" );  
+  xively.setKey( "GukBakYpcOYGFA0EEbI1OOOuFKv5iqXjMYuUrpdGqijQP2sh" );  
   
   // Replace with your own values  
   var feedID        = 217489518,          // Feed ID  
-      datastreamID  = "Baterias";       // Datastream ID  
-      selector      = "current_value";   // Your element on the page  
+      datastreamID  = "mykey";       // Datastream ID  
+      selector      = "Baterias";   // Your element on the page  
   
   // Get datastream data from Xively  
   xively.datastream.get (feedID, datastreamID, function ( datastream ) {  
